@@ -1,0 +1,6 @@
+train: C:/Users/lucas/OneDrive/Skrivbord/Deep_ML/deepml_project/datasets/potholes/new_splits/train/images
+val: C:/Users/lucas/OneDrive/Skrivbord/Deep_ML/deepml_project/datasets/potholes/new_splits/valid/images
+test: C:/Users/lucas/OneDrive/Skrivbord/Deep_ML/deepml_project/datasets/potholes/new_splits/test/images
+
+nc: 1
+names: ['pothole']

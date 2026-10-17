@@ -1,0 +1,19 @@
+# Hardware and input
+device: 0 #CPU: -1, GPU: 0,1,2,3 for multiple GPUs
+batch: 8
+imgsz: 640
+amp: true
+workers: 2
+
+# Freezing
+freeze: 0
+
+# Augmentation
+fliplr: 0.5
+scale: 0.2
+hsv_v: 0.3
+mosaic: 0.5
+close_mosaic: 10
+
+# Save plots
+plots: true

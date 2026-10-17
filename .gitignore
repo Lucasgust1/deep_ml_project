@@ -1,0 +1,42 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# Ultralytics downloads and training output
+*.pt
+ 
+# Keep only the selected best model weights from training runs.
+runs/**
+!runs/**/
+!runs/**/weights/
+runs/**/weights/*
+!runs/**/weights/best.pt
+
+# Preserve the useful reports and visualizations from the potholes run 4.
+!runs/detect/runs/potholes_scratch_100epochs-4/
+!runs/detect/runs/potholes_scratch_100epochs-4/*.png
+!runs/detect/runs/potholes_scratch_100epochs-4/*.jpg
+!runs/detect/runs/potholes_scratch_100epochs-4/*.csv
+!runs/detect/runs/potholes_scratch_100epochs-4/args.yaml
+!runs/detect/runs/potholes_scratch_100epochs-4/weights/
+!runs/detect/runs/potholes_scratch_100epochs-4/weights/best.pt
+weights/
+
+# Local dataset media and generated labels
+datasets/**/images/
+datasets/**/labels/
+datasets/**/export/
+datasets/**/train/
+datasets/**/valid/
+datasets/**/test/
+datasets/**/new_splits/
+
+# Keep dataset configuration and helper scripts versioned.
+!datasets/**/data.yaml
+!datasets/split_data.py
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
